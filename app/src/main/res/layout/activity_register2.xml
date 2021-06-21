@@ -40,7 +40,27 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="******"
-            android:backgroundTint="#FFF"/>
+            android:backgroundTint="#FFF"
+            android:id="@+id/et_password"/>
+
+        <View
+            android:id="@+id/v_saparator2"
+            android:background="#C1BBBB"
+            android:layout_below="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <EditText
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:paddingLeft="20dp"
+            android:drawablePadding="20dp"
+            android:layout_below="@+id/v_saparator2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Email"
+            android:backgroundTint="#FFF"
+            android:id="@+id/et_email"/>
+
     </RelativeLayout>
 
     <Button
@@ -48,15 +68,15 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="20dp"
         android:background="@drawable/btn_login"
-        android:text="Login"
+        android:text="Register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_login"/>
-
     <TextView
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome My Vast"
+        android:text="Register"
         android:fontFamily="sans-serif-smallcaps"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -64,27 +84,17 @@
         android:layout_above="@+id/rl_input"
         android:layout_marginBottom="100dp"
         android:layout_centerHorizontal="true"/>
-    <TextView
-        android:id="@+id/tv_forgot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot?"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:layout_below="@+id/rl_input"
-        android:layout_marginTop="20dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"/>
 
     <Button
-        android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
-        android:background="@drawable/sp_rectangle_root"
+        android:text="Login"
+        android:background="@drawable/sp_rectangle_login"
         android:textSize="10dp"
         android:textAllCaps="false"
-        android:layout_below="@+id/tv_forgot"
+        android:layout_above="@+id/tv_title"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="10sp"/>
+        android:layout_marginLeft="10sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"/>
 </RelativeLayout>
