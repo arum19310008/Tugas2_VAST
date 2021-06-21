@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222020"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/sp_rectangle_root"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="20dp"
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Username"
+            android:backgroundTint="#FFF"/>
+
+        <View
+            android:id="@+id/v_saparator"
+            android:background="#C1BBBB"
+            android:layout_below="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <EditText
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:paddingLeft="20dp"
+            android:drawablePadding="20dp"
+            android:layout_below="@+id/v_saparator"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="******"
+            android:backgroundTint="#FFF"/>
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_above="@+id/rl_input"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tv_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/rl_input"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/sp_rectangle_root"
+        android:textSize="10dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/tv_forgot"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10sp"/>
+</RelativeLayout>

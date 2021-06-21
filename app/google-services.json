@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "519741521752",
+    "project_id": "vast-188e9",
+    "storage_bucket": "vast-188e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519741521752:android:0fa2e00d003e6d02d26f2d",
+        "android_client_info": {
+          "package_name": "com.example.vast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519741521752-1ro6a211r2t4giln5krsidk6bhjuahed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW2GxGm8MU-E3Txe2Eoo2JLVFvXJ1LVeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519741521752-1ro6a211r2t4giln5krsidk6bhjuahed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
